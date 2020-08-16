@@ -1,0 +1,146 @@
+﻿<html>
+<head>
+    <link href="StyleSheet.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div class="navigation-bar">
+        <div id="navigation-container">
+            <div class="outerdiv">
+                <div style="width:95%;text-align:center;color:white;font-weight:bold;font-size:35px;padding:10px;">
+                    ISD Test Automation Report
+                </div>
+                <div>
+                    <img src="philips-shieldFinal.png" height="70" width="60" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="outerdiv"> 
+                <div id="resp-table" style="width:20%">
+                    <div id="resp-table-body">
+                        <div class="resp-table-row">
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold">Project : </p>
+                            </div>
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold">Intelli Space Discovery</p>
+                            </div>
+                        </div>
+                        <div class="resp-table-row">
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold">Test Case : </p>
+                            </div>
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold"></p>
+                            </div>
+                        </div>
+                        <div class="resp-table-row">
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold">Local Host : </p>
+                            </div>
+                            <div class="table-body-cell">
+                                <p style="Font-Weight:bold"></p>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+            <div style="width:60%"></div>
+         
+                <div id="drawChart_Div" style="width:20%" ></div>
+        </div>
+        <div id="resp-table">
+            <div id="resp-table-caption">
+                Responsive Table without Table tag
+            </div>
+            <div id="resp-table-header">
+                <div class="table-header-cell">
+                    <p> Verification Step</p>
+                </div>
+                <div class="table-header-cell">
+                    <p> Expected Result</p>
+                </div>
+                <div class="table-header-cell">
+                    <p> Actual Result</p>
+                </div>
+                <div class="table-header-cell">
+                    <p>Status</p>
+                </div>
+            </div>
+            <div id="resp-table-body">
+                <div class="resp-table-row">
+                    <div class="table-body-cell">
+                        <p>Some text.. sdjfkh d;sfj sdf j;sdifj ;sdi jidshf iosjh fsid fhsdhfidsifhisdhifhdkshf sg rdisfhdshfsdihfidkshg dfghfh</p>
+                    </div>
+                    <div class="table-body-cell">
+                        <p>Some text..</p>
+                    </div>
+                    <div class="table-body-cell">
+                        <p>Some text..</p>
+                    </div>
+                    <div class="table-body-cell">
+                        <p>Some text..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resp-table">
+            <div id="resp-table-caption">
+                Statistics
+            </div>
+            <div id="resp-table-header">
+                <div class="table-header-cell">
+                    <p> Total Step Count</p>
+                </div>
+                <div class="table-header-cell">
+                    <p>Pass Count</p>
+                </div>
+                <div class="table-header-cell">
+                    <p>Fail Count</p>
+                </div>
+            </div>
+            <div id="resp-table-body">
+                <div class="resp-table-row">
+                    <div class="table-body-cell">
+                        <p>Some text.. dshf asd hsdlahf as;adhf irah acdisic hsd sdihfsf dihdfih</p>
+                    </div>
+                    <div class="table-body-cell">
+                        <p>Some text..</p>
+                    </div>
+                    <div class="table-body-cell">
+                        <p>Some text..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+                    // Load Charts and the corechart package.
+                    google.charts.load('current', { 'packages': ['corechart'] });
+
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+
+                        var data = new google.visualization.DataTable();
+                        data.addColumn('string', 'Execution_Status');
+                        data.addColumn('number', 'count');
+                        data.addRows([
+                          ['PASSED', 10],
+                          ['FAILED', 5],
+                        ]);
+
+                        // Set options for Anthony
+                        var options = { title: '', width: 400, height: 'auto', 'is3D': true, 'colors': ['green', 'red'] };
+
+                        // Instantiate and draw the chart for Execution status
+                        var chart = new google.visualization.PieChart(document.getElementById('drawChart_Div'));
+                        chart.draw(data, options);
+                    }
+</script>

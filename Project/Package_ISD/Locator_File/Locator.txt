@@ -1,0 +1,169 @@
+Sign_different_user -- xpath -- element -- //*[text()='Sign in as a different user']
+Change_User -- xpath -- button -- //*[text()='Change User']
+Username -- xpath -- editbox -- //*[text()='Username ']/ancestor::td/following-sibling::td//input[contains(@id,'username')]
+Password -- xpath -- editbox -- //*[text()='Password ']/ancestor::td/following-sibling::td//input[contains(@id,'password')]
+Login -- xpath -- button -- //*[@value = 'Accept & Log In']
+Search_field -- xpath -- editbox -- //*[@class='searchBox ng-pristine ng-valid']
+Search_field_1 -- xpath -- editbox -- //*[@class='searchBox ng-valid ng-dirty']
+PD_List_id -- xpath -- element -- //*[@id='patientList']//tr//td[2]
+PD_List -- xpath -- element -- //*[@class='scroll tablesorter pt-listview']//tr//td[2]
+PD_List_1 -- xpath -- element -- //*[@class='w2ui-panel-content']//tr//td[2]
+Loading_wheel -- xpath -- element -- //*[@class='pt-progressbar-circular-gradient']
+Image_Canvas -- xpath -- element -- //*[@class='annotationsCanvasG1']
+Image_Layout_check -- xpath -- element -- //*[@class='concreteCell ui-droppable']
+Hide_Annotations -- xpath -- button -- //*[@class='pt-buttonbase pt-has-tooltip pt-togglebutton pt-borderless pt-only-icon']//span[contains(@style,'MeasurementShowHide.svg')]
+AnnotationsTool_Downbutton -- xpath -- button -- //*[@widgetid='AnnotationsToolModel']//div[@class='pt-dropdownbutton']
+Annotations_Dropdown -- xpath -- element -- //*[@class='pt-popup pt-splitbutton-popup']
+Annotation_Menuitems -- xpath -- element -- //*[@class = 'pt-listitem pt-only-icon pt-has-tooltip pt-selected']//div[contains(@*style,Menu_image)]
+Hide_graphics -- xpath -- element -- //*[@widgetid='AnnotationsTool.HideAllGraphicsCommand']//span[@class='pt-icon']
+Sementation_Visual_Check -- xpath -- element -- //*[@widgetid='SimplicitSegTools.CreateLesionByCircle']//span[contains(@style,'SimplicitSegmentationCreate.svg')]
+Segmentation_Expand -- xpath -- element -- //*[@class='expander pt-expander pt-collapsed pt-expander-last' and @id='segToolsSection']//span[@class='pt-expander-chevron icon-double-angle']
+Seg_3D_ROI -- xpath -- element -- //*[@widgetid='SimplicitSegTools.CreateLesionByCircle']//span[contains(@style,'SimplicitSegmentationCreate.svg')]
+Seg_3D_Add_ROI -- xpath -- element -- //*[@widgetid='SimplicitSegTools.CreateLesionByCircle']//span[contains(@style,'SimplicitSegmentationCreate.svg')]
+seg_3D_Subtract_ROI -- xpath -- element -- //*[@widgetid='SimplicitSegTools.SubtractBrush']//span[contains(@style,'SimplicitSegmentationSubtractUsingBrush.svg')]
+
+Tile_Layout_DD_Btn -- xpath -- element -- //*[@class='labeledBlock']/label[contains(text(),'Tile Layout')]/following-sibling::span//div[@class='icon-arrow-down']
+Tile_Layout_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_6 mCS_no_scrollbar']
+Tile_Layout_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_6 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+
+flower_wheel -- xpath -- element -- //*[@class='pt-flower']
+flower_wheel_items -- xpath -- element -- //*[@class='pt-flower-items']/*[@class='pt-flower-item']
+fw_subitems_items -- xpath -- element -- //*[@class='pt-flower-subitems']/*[@class='pt-flower-item']
+
+
+Tissue_Table -- xpath -- element -- //*[@dialogtitle='Tissue properties']
+Tissue_Name -- xpath -- editbox -- //*[@class='labeledBlock']//div[@widgetid='TissuePropertiesDialog.LesionName']/input
+Tissue_organ -- xpath -- element -- //*[@widgetid='TissuePropertiesDialog.Organ']
+Tissue_Comments -- xpath -- element -- //*[@class='labeledBlock']//div[@widgetid='TissuePropertiesDialog.Comments']/input
+Tissue_Dialog_Accept -- xpath -- element -- //*[@widgetid='TissuePropertiesDialog.OkCommand']//span[contains(text(),'OK')]
+Tissue_Dialog_Decline -- xpath -- element -- //*[@widgetid='TissuePropertiesDialog.OkCommand']//span[contains(text(),'Cancel')]
+
+All_Td_in_Tissue_Table -- xpath -- element -- //*[@class='pt-listview-data']//td[@class='pt-selection-cell pt-hidden-column']/following-sibling::td
+Tissue_Count_InTable -- xpath -- element -- //*[@class='pt-listview-data']//following-sibling::td[contains(text(),*)]
+Tissue_sub_elements -- xpath -- element -- //*[@class='pt-listview-data']//following-sibling::td[contains(text(),<Tissue_Name>)]/following-sibling::td
+
+Image_Layout_Btn -- xpath -- element -- //*[@class='collapsedsidebarcontainer']//span[contains(text(),'Layouts')]
+Patient_Data -- xpath -- element -- //*[@class='collapsedsidebarcontainer']//span[contains(text(),'Patient Data')]
+PD_Labels -- xpath -- element -- //*[@class='pt-pictorial-header pt-item-fill-parent pt-pictorial-item pt-label pt-truncate']
+PD_Series -- xpath -- element -- //*[@class='pt-pictorial-group-horizontal']//li
+Image_Layout_Label -- xpath -- element -- //*[@widgetid='Task_TileLayoutToolModel_PrimaryMonitor']//span[contains(text(),'layout_text')]/..
+PD_Frame -- tag -- frame -- iframe
+
+Launch_FMRI -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Research Neurology Suite')]
+Launch_CARS -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Research Cardiology Suite')]
+Launch_ROS -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Research Oncology Suite')]
+Launch_diffusion -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Diffusion')]
+Launch_Image_Viewer -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Image Viewer')]
+Launch_VAS -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Research Vascular Suite')]
+Launch_Annotation_Tool -- xpath -- element -- //*[@class='pt-context-menu']/li//div[contains(text(),'Annotation Tool')]
+
+PD_Upload_Button -- xpath -- element -- //*[@class='leftPatientsBtnsMenu myToolTipLeft ng-scope']//img[contains(@ng-src,'Content/ZigitImages/import_16.png')]
+PD_Delete_Button -- xpath -- element -- //*[@class='leftPatientsBtnsMenu myToolTipLeft ng-scope']//img[contains(@ng-src,'Content/ZigitImages/delete_16.png')]
+PD_Delete_Dialog -- xpath -- element -- //*[@id='dialog-confirm-blobs-deletion']
+PD_Delete_Dialog_text -- xpath -- element -- //*[@id='dialog-confirm-blobs-deletion']//h1
+PD_Delete_PD_Approve -- xpath -- element -- //*[@id='dialog-confirm-blobs-deletion']//span[contains(text(),'No')] 
+PD_Upload_Complete -- xpath -- element -- //*[@class='uploadPanel']//div[contains(text(),'All completed')]
+PD_Upload_Status -- xpath -- element -- //*[@class='uploadPanel']//div[@class='upload-progress pt-progressbar']/div[@class='upload-text']
+PD_Upload_Window -- xpath -- element -- //*[@class='uploadPanel']
+PD_Upload_Progressbar -- xpath -- element -- //*[@class='uploadPanel']//div[@class='upload-progress pt-progressbar']
+PD_Progressbar_close -- xpath -- element -- //*[@class='upload-box']//div[contains(text(),Patient_data_file_Name)]/following-sibling::img
+PD_Upload_Close -- xpath -- element -- //*[@class='uploadPanel']//div[@class='barButton']
+
+Plugin_Visual_Check -- xpath -- element -- //*[@id='pluginSection']//div[@class='content pt-expander-content']/p
+Plugin_Expand -- xpath -- element -- //*[@id='pluginSection']//span[@class='pt-expander-chevron icon-double-angle']
+Plugin_ExecutionStatus -- xpath -- element -- //*[@id ='PluginConfiguration']//div[@id='PluginConfigurationConfigContainerContent']//div[text()='COMPLETED']
+Plugin_Result -- xpath -- element -- //*[@class='Dialog pt-dialog pt-popup ui-draggable' and @id='PluginResult_Dialog']
+Plugin_Result_OkCompleted -- xpath -- element -- //*[@class='Dialog pt-dialog pt-popup ui-draggable' and @id='PluginResult_Dialog']//div[@class='pt-content dialog-content']//div[contains(text(),'OK_COMPLETED')]
+Plugin_Result_Content -- xpath -- element -- //*[@class='Dialog pt-dialog pt-popup ui-draggable' and @id='PluginResult_Dialog']//div[@class='pt-content dialog-content']//div[contains(text(),'OK_COMPLETED')]/following-sibling::div
+Plugin_Result_Close -- xpath -- element -- //*[@class='Dialog pt-dialog pt-popup ui-draggable' and @id='PluginResult_Dialog']//span[@class='pt-icon control-close']
+Select_CPlugin_DropDown -- xpath -- element -- //*[@widgetid='UIComposerPluginCategories']/following-sibling::span//div[@class='icon-arrow-down']
+Plugin_Category_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_6']
+Plugin_Category_Select -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_6']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+Select_SCat_Plugin_DropDown -- xpath -- element -- //*[@widgetid='UIComposerPluginCommands']/following-sibling::span//div[@class='icon-arrow-down']
+Plugin_SubCategory_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_7']
+Plugin_SubCatnoscroll_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_7 mCS_no_scrollbar']
+Plugin_SCat_Select -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_7']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+Plugin_SubCatnoscroll_Select -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_7 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+#Plugin_SCat_Select1 -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_7']//div[@class='mCSB_container']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+
+
+BrainSegPlugin_Input3D_DropDown -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 3D Volume')]//following-sibling::div//div[@class='icon-arrow-down']
+BrainSegPlugin_Input3D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+BrainSegPlugin_Input3D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+BrainSegPlugin_RefSet -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Region Set')]//following-sibling::div//input
+BrainSegPlugin_Modality -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Modality')]//following-sibling::div//input
+Plugin_Run -- xpath -- element -- //*[@class='pt-expander-contentcontainer']//span[@class='pt-layout-container']/span[contains(text(),'Run')]
+
+
+clipping_3D_Inp_Vol_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'3D input volume')]//following-sibling::div//div[@class='icon-arrow-down']
+clipping_3D_Inp_Vol_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+clipping_3D_Inp_Vol_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+
+clipping_3D_seg_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'3D input segmentation')]//following-sibling::div
+clipping_3D_Seg_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_9 mCS_no_scrollbar']
+clipping_3D_Seg_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_9 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+
+Create_Mask_Inp_Image_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input Image')]//following-sibling::div//div[@class='icon-arrow-down']
+Create_Mask_Inp_Image_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+Create_Mask_Inp_Image_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+Create_Mask_Num_Closings -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Num Closings')]//following-sibling::div//input
+Create_Mask_Final_Dilation -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Final Dilations')]//following-sibling::div//input
+
+Prostate_Input_Image_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input Image')]//following-sibling::div//div[@class='icon-arrow-down']
+Prostate_Inp_Image_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+Prostate_Inp_Image_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+
+BrainTissue_T1_Image_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'T1 Image')]//following-sibling::div//div[@class='icon-arrow-down']
+BrainTissue_T1_Image_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+BrainTissue_T1_Image_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+
+HeartSegPlugin_Input3D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 3D Volume')]//following-sibling::div
+HeartSegPlugin_Input3D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+HeartSegPlugin_Input3D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+HeartSegPlugin_RegionSet -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Region Set')]//following-sibling::div//input
+HeartSegPlugin_Modality -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Modality')]//following-sibling::div//input
+
+LiverSegPlugin_Input3D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 3D Volume')]//following-sibling::div
+LiverSegPlugin_Input3D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+LiverSegPlugin_Input3D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+
+MorphSegPlugin_Inp_Image_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input Image')]//following-sibling::div//div[@class='icon-arrow-down']
+MorphSegPlugin_Inp_Image_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+MorphSegPlugin_Inp_Image_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+MorphSegPlugin_Inp_Tissue_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input Tissue')]//following-sibling::div
+MorphSegPlugin_Inp_Tissue_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_9 mCS_no_scrollbar']
+MorphSegPlugin_Inp_Tissue_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_9 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+MorphSegPlugin_Operator_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Operator')]//following-sibling::div
+MorphSegPlugin_Operator_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_10 mCS_no_scrollbar']
+MorphSegPlugin_Operator_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_10 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+MorphSegPlugin_Neighborhood_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Neighborhood')]//following-sibling::div
+MorphSegPlugin_Neighborhood_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_11 mCS_no_scrollbar']
+MorphSegPlugin_Neighborhood_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_11 mCS_no_scrollbar']//li[@class='pt-listbox-item']//div[@class='pt-listbox-item-label']
+MorphSegPlugin_Iterations -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Number of Iterations')]//following-sibling::div//input
+
+FilterPlugin_Cluster_LT -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Lower Threshold')]//following-sibling::div//input
+FilterPlugin_Cluster_UT -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Upper Threshold')]//following-sibling::div//input
+FilterPlugin_Cluster_Input3D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 3D Volume')]//following-sibling::div
+FilterPlugin_Cluster_Input3D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+FilterPlugin_Cluster_Input3D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+FilterPlugin_Cluster_size -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Cluster Size')]//following-sibling::div//input
+
+Image_CorPlugin_Input3D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 3D Volume')]//following-sibling::div
+Image_CorPlugin_Input3D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+Image_CorPlugin_Input3D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+
+Registration_Plugin_Input4D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 4D Volume')]//following-sibling::div
+Registration_Plugin_Input4D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+Registration_Plugin_Input4D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+Registration_Plugin_Refvol_index -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Ref. volume index  (start from 1)')]//following-sibling::div//input
+
+FilterPlugin_Split_Input4D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 4D Volume')]//following-sibling::div
+FilterPlugin_Split_Input4D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+FilterPlugin_Split_Input4D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+FilterPlugin_Split_3Dvol_index -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'3D Volume index')]//following-sibling::div//input
+FilterPlugin_Split_no_vol -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Number of volumes')]//following-sibling::div//input
+
+FilterPlugin_MIPdiff_Input4D_DD_Btn -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'Input 4D Volume')]//following-sibling::div
+FilterPlugin_MIPdiff_Input4D_DD_Pane -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']
+FilterPlugin_MIPdiff_Input4D_DD_Element -- xpath -- element -- //*[@class='pt-popup pt-listbox pt-scrollbar pt-dropdown-listbox pt-dark mCustomScrollbar _mCS_8 mCS_no_scrollbar']//following-sibling::li//div[@class='pt-listbox-item-label']
+FilterPlugin_MIPdiff_B_values -- xpath -- element -- //*[@id='PluginConfigurationConfigContainerContent']//div[contains(text(),'b values')]//following-sibling::div//input
