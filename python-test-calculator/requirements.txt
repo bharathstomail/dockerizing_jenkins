@@ -1,5 +1,0 @@
-pytest==3.9.3
-pytest-forked==0.2
-pytest-xdist==1.23.2
-python-dateutil==2.7.5
-selenium==3.14.1
