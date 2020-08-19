@@ -1,7 +1,6 @@
 
 FROM ubuntu
 USER root
-# set Philips proxy
 
 USER root
 RUN mkdir -p /opt/Project_ISD
