@@ -1,5 +1,6 @@
 
 FROM ubuntu
+USER root
 WORKDIR /Project_ISD
 
 COPY ./Package_ISD ./Package_ISD
